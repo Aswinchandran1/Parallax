@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background: #fff;
+    min-height: 100vh;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    /* color: #112434; */
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    /* color: #112434; */
+    color: #fff;
+    border-radius: 20px;
+}
+
+.navigation li a:hover {
+    background: #112434;
+    color: #fff;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.parallax img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+#moon{
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+#text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4em;
+    /* color: #112434; */
+    color: #fff;
+}
+
+.sec {
+    position: relative;
+    padding: 100px;
+    background-color: #112434;
+}
+
+.sec h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+
+@media (max-width: 760px){
+    
+    .navigation,.logo{
+        display: none;
+    }
+    .sec {
+        padding: 80px;
+    }
+}
+@media (max-width: 575px){
+    .parallax{
+        height: 80vh;
+    }
+    #text {
+        font-size: 3em;
+    }
+    .sec {
+        padding: 50px;
+    }
+}
+@media (max-width: 440px){
+    .parallax{
+        height: 70vh;
+    }
+    #text {
+        font-size: 2em;
+    }
+    .sec {
+        padding: 20px;
+    }
+}
+
